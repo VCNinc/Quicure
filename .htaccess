@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^GET\s(.*/)index\.php [NC]
+RewriteRule . %1 [NE,R=301,L]
+
+RewriteCond %{THE_REQUEST} ^GET\s.+\.php [NC]
+RewriteRule ^(.+)\.php$ /$1 [NE,R=301,L,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+
+RewriteRule ^invoice/frameless/(.*)$ invoice.php?q=$1&frameless=1 [L]
+
+RewriteRule ^invoice/(.*)$ invoice.php?q=$1 [L]
+
+RewriteRule ^return/(.*)$ return.php?q=$1 [L]

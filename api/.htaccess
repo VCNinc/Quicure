@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^simple_payment/(.*)/(.*)/(.*)$ simple_payment.php?email=$1&price=$2&title=$3

@@ -1,0 +1,158 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {margin: 0; padding:0;font-family: 'Open Sans', sans-serif; color:#333; font-size:14px; background:#fff; height: 100%; padding-bottom: 40px;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {display: block;}
+*{ box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+input, select, form, textarea, button{ margin:0; padding:0; outline:none}
+a{ text-decoration:none; outline:none;}
+img{ border:none;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+h1{ font-weight:800; color:#333; margin:20px 0 50px; text-align:center; text-transform:uppercase; font-size:37px;}
+.container{ width:1000px; margin:auto;}
+/*=========defult css end========*/
+
+/*=======HEADER START===========*/
+header{ background:#25b695; color:#fff; padding: 0; border-bottom:solid 1px #317968;}
+header .logo{ float:left;}
+header .header_right{ float:right; padding: 10px 0;}
+.header_right .phone{ float:right; background:url(../img/email.svg) no-repeat left; padding:5px 5px 5px 60px; margin-bottom:10px;}
+header nav{ clear:both; pa}
+header nav ul{ margin:0; padding:0; float:right;}
+header nav ul li{ margin:0 10px; padding:0; display:inline-block;}
+header nav ul li.active a, header nav ul li a:hover{background:#06644f;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+color: #fff;
+}
+header nav ul li a{ color:#fff; padding:3px 7px;}
+header nav ul li a:hover{ background:#06644f;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+}
+/*=======HEADER END===========*/
+
+/*=======FRONT HEADER START===========*/
+.front_header{text-align: center; background:#25b695; border-top:solid 1px #51c5aa; padding:40px 0 70px; position:relative;}
+.cloud{background:url(../images/bg-cloud.png) repeat-x; height:160px; position:absolute; bottom:0; width:100%;}
+.front_header .container{ position:relative;}
+.front_header_left{width:343px; float:left;}
+.front_header_left h1{ font-size:60px; color:#fff; margin:5px; margin-left: -48px; padding:0; font-weight:800; text-transform:uppercase; line-height:45px;}
+.front_header_left p{ color:#fff; line-height:25px; margin-left: -48px;}
+.register_button { width:272px; color:#fff; font-style:italic; text-align:center; font-size:19px; font-weight:700;
+text-shadow:1px 2px 0 #333;
+-moz-text-shadow:1px 2px 0 #333;
+-webkit-text-shadow:1px 2px 0 #333;
+}
+.register_button a, .register_button input {
+display:block;
+background:#06644f;
+font-size:27px;
+padding:8px 0;
+text-align:center;
+color:#fff;
+margin-bottom:3px;
+font-weight:bold;
+text-shadow:1px 2px 0 #25b695;
+-moz-text-shadow:1px 2px 0 #25b695;
+-webkit-text-shadow:1px 2px 0 #25b695;
+box-shadow:1px 4px 0 #024e3d;
+-moz-box-shadow:1px 4px 0 #024e3d;
+-webkit-box-shadow:1px 4px 0 #024e3d;
+border: 0;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+}
+.register_button a:hover, .register_button input:hover{ background:#128a6f;
+box-shadow:1px 4px 0 #06644f;
+-moz-box-shadow:1px 4px 0 #06644f;
+-webkit-box-shadow:1px 4px 0 #06644f;
+cursor: pointer;
+}
+.front_header_right{ float:right;}
+.front_header_right .inovice{ float:right; position:relative; margin-right:-100px;}
+.Easy_Requisitions{ position:absolute; background:#fff; border:5px solid rgba(0, 0, 0, 0.5); width:296px; right:316px; color:#6d6d6d; bottom:110px;
+background-clip:padding-box;
+padding:10px;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+.Easy_Requisitions h2{font-size:24px; color:#9f9f9f;background:url(../images/Easy.png) no-repeat left; margin:0; 
+padding: 20px 5px 20px 72px; display: inline-block;
+margin-left: -36px;}
+/*=======FRONT HEADER END===========*/
+
+/*=======FEATURED SECTION START===========*/
+.featured_section{ padding-bottom:50px}
+.featured_section ul{ margin:0; padding:0; text-align:center;}
+.featured_section ul li{ margin:0 10px; padding:0; list-style:none; display:inline-block;}
+/*=======FEATURED SECTION END===========*/
+
+/*=======Client Views Section start===========*/
+.client_views{ background:#25b695; padding:0 0 40px 0; position:relative;}
+.pc_bg{ background:url(../images/computer.png) no-repeat right top;}
+.client_views_content{width:400px; padding-top:40px; }
+.client_views_content h1{font-size:37px; color:#fff; margin:0; padding:0; font-weight:800; text-transform:uppercase; line-height:45px;text-align:left;}
+.client_views_content p{ color:#fff; font-size:18px; line-height:30px}
+.client_views .register_button{ margin:40px auto 0}
+.book_bg{ position:absolute; width:998px; height:172px; left:0; right:0; bottom:-171px; background:url(../images/book.png) no-repeat center bottom; margin:auto;}/*=======Client Views Section end===========*/
+
+/*=======Easy Paid Section start===========*/
+.easy_paid{ padding-top:200px; padding-bottom:50px;}
+.Getting_Paid_img{ float:left; margin-right:20px;}
+.getting_content{ float:right; width:500px; padding-top:20px; font-size:18px; line-height:30px; color:#666;}
+.easy_paid .register_button{ margin:40px auto 0;}
+.easy_paid .register_button{ color:#666; text-shadow:none;}
+/*=======Easy Paid Section end===========*/
+
+/*=======How it works Section start===========*/
+.how_it_works{ background:#25b695; padding:20px 0; color:#fff; text-align:center;}
+.how_it_works h1{ color:#fff;}
+.how_it_works  ul{ margin:0; padding:0;}
+.how_it_works  ul li{width:30%; margin:0; padding:0; list-style:none; float:left}
+.how_it_works  ul li:first-child{ margin-right:50px;}
+.how_it_works  ul li:last-child{ float:right}
+.how_it_works  ul li span{ background:#fff; border:solid 5px #06644f; text-align:center; width:88px; height:88px; display:block; margin:auto; padding-top:15px;
+border-radius:50px;
+-moz-border-radius:50px;
+-webkit-border-radius:50px;
+}
+.how_it_works  ul li span i{ font-size:45px; color:#8a8a8a;}
+/*=======How it works Section end===========*/
+
+
+/*=======Company Billling Section end===========*/
+.company_billling{ text-align:center; position:relative;}
+.company_billling h2{ font-size:29px;}
+.company_billling img{ display:block;}
+.company_billling .trangle{ background:url(../images/trangle.png) repeat-x; height:10px; position:absolute; width:100%; bottom:-1px;}
+
+.newletter{ background:#25b695; padding:20px 0;}
+.newletter input.textbox{ float:left; padding:17px; background:#fff; border:none; width:310px; margin-right:20px;}
+.newletter .register_button{ float:left; margin-right:20px;}
+
+footer{ color:#fff; font-size:13px; padding:10px 0; text-align:center; background:#06644f; width: 100%; position: absolute; left: 0; bottom: 0;}
+footer a{ color:#19dfb2}
