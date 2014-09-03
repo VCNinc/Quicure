@@ -1,10 +1,4 @@
-<?php
-include('core/php/incl.php');
-if($logged_in) {
-	header("Location: dashboard.php");
-	exit();
-}
-?>
+
 <!doctype html>
 <html>
 	<head>
@@ -20,10 +14,23 @@ if($logged_in) {
 			<script src="core/js/front/css3-mediaqueries.js"></script>
 		<![endif]-->
 		<link rel="shortcut icon" href="https://quicure.com/core/img/favicon.png">
-		<?php require_once('core/php/chat.php'); ?>
-	</head>
+			</head>
 	<body>
-		<?php include('core/php/header.php'); ?>
+				<header>
+	    	<div class="container clearfix">
+	    		<div class="logo"><a href="index.php"><img src="core/img/logo.png" height="74"></a></div>
+	        	<div class="header_right">
+	        		<div class="phone">24/7 Support - <strong>admin@quicure.com</strong></div>
+			        <nav>
+			            <ul>
+			                <li><a href="docs">Developer API</a></li>
+			                <li><a href="https://twitter.com/QuicureSupport" target="_blank">Tweet Us</a></li>
+			                <li><a href="login">Login</a></li>
+			            </ul>
+			        </nav>
+			    </div>
+		    </div>
+	    </header>
 		<div class="front_header">
 			<div class="container clearfix">
 		    	<div class="front_header_left">
@@ -124,10 +131,12 @@ if($logged_in) {
 	        </form>
 	    </div>
 	</div>
-	<?php
-	require_once('core/php/footer.php');
-	?>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<div style="height: 100px;"></div>
+	<footer>
+	<img src="core/img/logo-wh.png" height="100px"><br>
+	Copyright © 2014 Quicure. All rights reserved.<br>
+	<a href="#">Terms of Service</a> &bull; <a href="#">Privacy Policy</a>
+	</footer>	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>
 	$(".register_button a").click(function(){
 		$('body').animate({
